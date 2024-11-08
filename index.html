@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<title>Weather App</title>
+</head>
+<body>
+	<div class="container" >
+		<div class="weather-card">
+			<h3 style="color: black;font-size: 30px;" >
+				<img src="https://img.freepik.com/premium-vector/weather-icon-drawing-cloud-with-its-expression_583131-106.jpg" alt="Weather Icon" id="weather-icon">
+				Weather Site
+			</h3>
+			<form>
+			<input type="text" id="city-input" placeholder="Enter city name">
+			</form>
+			<button id="city-input-btn"
+					onclick="weatherFn($('#city-input').val())">
+					Get Weather
+			</button>
+			<div id="weather-info"
+				class="INFO">
+				<h3 id="city-name" style="text-decoration: underline;"></h3>
+				<p id="date"></p>
+				<p id="temperature"></p>
+				<p id="description"></p>
+				<p id="wind-speed"></p>
+			</div>
+		</div>
+	</div>
+	 <script src=
+"https://code.jquery.com/jquery-3.6.0.min.js">
+	</script>
+	<script src=
+"https://momentjs.com/downloads/moment.min.js">
+	</script> 
+	<script src="script.js"></script>
+</body>
+
+</html>
